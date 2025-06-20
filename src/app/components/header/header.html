@@ -1,0 +1,63 @@
+<div
+  class="px-10 sticky top-0 z-50 bg-white shadow-md bg-background/95 backdrop-blur"
+>
+  <div class="flex justify-between items-center h-16">
+    <div class="flex items-center gap-6 pl-14">
+      <span class="text-2xl font-bold">MoonJP</span>
+
+      <div class="flex items-center gap-4 text-sm">
+        <span
+          class="px-2 cursor-pointer hover:text-red-500"
+          (click)="onNavigate()"
+          >Home</span
+        >
+        <span
+          class="px-2 cursor-pointer hover:text-red-500"
+          (click)="onNavigate()"
+          >Products</span
+        >
+        <span
+          class="px-2 cursor-pointer hover:text-red-500"
+          (click)="onNavigate()"
+          >Collections</span
+        >
+        <span
+          class="px-2 cursor-pointer hover:text-red-500"
+          (click)="onNavigate()"
+          >Inspiration</span
+        >
+        <span
+          class="px-2 cursor-pointer hover:text-red-500"
+          (click)="onNavigate()"
+          >About Us</span
+        >
+      </div>
+    </div>
+
+    <div class="flex items-center mr-20 gap-3">
+      <div
+        class="w-10 h-10 cursor-pointer hover:bg-slate-100 items-center flex justify-center rounded"
+      >
+        <ng-icon name="heroMagnifyingGlass" size="18"></ng-icon>
+      </div>
+
+      <div
+        class="w-10 h-10 cursor-pointer hover:bg-slate-100 items-center flex justify-center rounded"
+      >
+        <ng-icon name="heroHeart" size="18"></ng-icon>
+      </div>
+
+      <div
+        class="w-10 h-10 cursor-pointer hover:bg-slate-100 items-center flex justify-center rounded"
+      >
+        <ng-icon name="heroShoppingBag" size="18"></ng-icon>
+      </div>
+
+      <div
+        class="w-10 h-10 cursor-pointer hover:bg-slate-100 items-center flex justify-center rounded"
+      >
+        <ng-icon name="heroUser" size="18"></ng-icon>
+      </div>
+    </div>
+  </div>
+</div>
