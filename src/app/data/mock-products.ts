@@ -10,6 +10,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 124,
     isNew: true,
     imageUrl: 'assets/vongtay.jpg',
+    category: 'Vòng tay',
+    material: 'Bạc mạ vàng',
+    color: 'Hồng',
   },
   {
     id: 2,
@@ -19,6 +22,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 98,
     isNew: false,
     imageUrl: 'assets/Vongco.jpg',
+    category: 'Dây chuyền',
+    material: 'Bạc 925',
+    color: 'Bạc',
   },
   {
     id: 3,
@@ -29,6 +35,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 76,
     isNew: true,
     imageUrl: 'assets/Tramcaiao.jpg',
+    category: 'Trâm cài áo',
+    material: 'Bạc mạ vàng',
+    color: 'Vàng',
   },
   {
     id: 4,
@@ -38,6 +47,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 152,
     isNew: false,
     imageUrl: 'assets/hoatai2.jpg',
+    category: 'Bông tai',
+    material: 'Đá tự nhiên',
+    color: 'Trắng',
   },
   {
     id: 5,
@@ -48,6 +60,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 88,
     isNew: true,
     imageUrl: 'assets/Tramcaiao.jpg',
+    category: 'Nhẫn',
+    material: 'Bạc 925',
+    color: 'Hồng',
   },
   {
     id: 6,
@@ -57,6 +72,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 132,
     isNew: false,
     imageUrl: 'assets/Tramcaiao.jpg',
+    category: 'Dây chuyền',
+    material: 'Ngọc trai Akoya',
+    color: 'Trắng',
   },
   {
     id: 7,
@@ -67,6 +85,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 67,
     isNew: true,
     imageUrl: 'assets/Tramcaiao.jpg',
+    category: 'Phụ kiện tóc',
+    material: 'Đá tự nhiên',
+    color: 'Xanh',
   },
   {
     id: 8,
@@ -76,6 +97,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 104,
     isNew: false,
     imageUrl: 'assets/Tramcaiao.jpg',
+    category: 'Bông tai',
+    material: 'Đá tự nhiên',
+    color: 'Xanh',
   },
   {
     id: 9,
@@ -85,6 +109,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 145,
     isNew: true,
     imageUrl: 'assets/Tramcaiao.jpg',
+    category: 'Vòng tay',
+    material: 'Bạc 925',
+    color: 'Bạc',
   },
   {
     id: 10,
@@ -94,6 +121,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 91,
     isNew: false,
     imageUrl: 'assets/Tramcaiao.jpg',
+    category: 'Nhẫn',
+    material: 'Ngọc trai Akoya',
+    color: 'Tím',
   },
   {
     id: 11,
@@ -103,6 +133,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 120,
     isNew: true,
     imageUrl: 'assets/Tramcaiao.jpg',
+    category: 'Dây chuyền',
+    material: 'Bạc mạ vàng',
+    color: 'Vàng',
   },
   {
     id: 12,
@@ -113,6 +146,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 73,
     isNew: false,
     imageUrl: 'assets/Tramcaiao.jpg',
+    category: 'Dây chuyền',
+    material: 'Bạc 925',
+    color: 'Bạc',
   },
   {
     id: 13,
@@ -122,6 +158,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 58,
     isNew: true,
     imageUrl: 'assets/Tramcaiao.jpg',
+    category: 'Phụ kiện tóc',
+    material: 'Bạc mạ vàng',
+    color: 'Vàng',
   },
   {
     id: 14,
@@ -132,6 +171,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 165,
     isNew: false,
     imageUrl: 'assets/Tramcaiao.jpg',
+    category: 'Bông tai',
+    material: 'Đá tự nhiên',
+    color: 'Trắng',
   },
   {
     id: 15,
@@ -141,6 +183,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 50,
     isNew: true,
     imageUrl: 'assets/Tramcaiao.jpg',
+    category: 'Nhẫn',
+    material: 'Đá tự nhiên',
+    color: 'Xanh',
   },
   {
     id: 16,
@@ -150,6 +195,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 109,
     isNew: false,
     imageUrl: 'assets/Tramcaiao.jpg',
+    category: 'Vòng tay',
+    material: 'Bạc mạ vàng',
+    color: 'Vàng',
   },
   {
     id: 17,
@@ -160,6 +208,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 172,
     isNew: true,
     imageUrl: 'assets/Tramcaiao.jpg',
+    category: 'Vòng tay',
+    material: 'Bạc 925',
+    color: 'Bạc',
   },
   {
     id: 18,
@@ -169,6 +220,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 95,
     isNew: false,
     imageUrl: 'assets/Tramcaiao.jpg',
+    category: 'Dây chuyền',
+    material: 'Đá tự nhiên',
+    color: 'Hồng',
   },
   {
     id: 19,
@@ -178,6 +232,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 61,
     isNew: true,
     imageUrl: 'assets/Tramcaiao.jpg',
+    category: 'Trâm cài áo',
+    material: 'Bạc mạ vàng',
+    color: 'Hồng',
   },
   {
     id: 20,
@@ -188,6 +245,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 84,
     isNew: false,
     imageUrl: 'assets/Tramcaiao.jpg',
+    category: 'Bông tai',
+    material: 'Ngọc trai Akoya',
+    color: 'Trắng',
   },
   {
     id: 21,
@@ -197,6 +257,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 110,
     isNew: true,
     imageUrl: 'assets/Tramcaiao.jpg',
+    category: 'Nhẫn',
+    material: 'Đá tự nhiên',
+    color: 'Xanh',
   },
   {
     id: 22,
@@ -206,6 +269,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 138,
     isNew: false,
     imageUrl: 'assets/Tramcaiao.jpg',
+    category: 'Dây chuyền',
+    material: 'Bạc mạ vàng',
+    color: 'Vàng',
   },
   {
     id: 23,
@@ -216,6 +282,9 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 102,
     isNew: true,
     imageUrl: 'assets/Tramcaiao.jpg',
+    category: 'Dây chuyền',
+    material: 'Bạc 925',
+    color: 'Bạc',
   },
   {
     id: 24,
@@ -225,5 +294,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     reviewCount: 55,
     isNew: false,
     imageUrl: 'assets/Tramcaiao.jpg',
+    category: 'Trâm cài áo',
+    material: 'Bạc mạ vàng',
+    color: 'Hồng',
   },
 ];

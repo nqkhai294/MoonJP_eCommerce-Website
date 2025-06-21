@@ -13,6 +13,9 @@ export interface ProductCard {
     price: number;
     rating: number;
     reviewCount: number;
+    category: string;
+    material: string;
+    color: string;
     originalPrice?: number; // Optional field for original price
     isNew?: boolean; // Optional field to indicate if the product is new
     isOnSale?: boolean; // Optional field to indicate if the product is on sale
