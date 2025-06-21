@@ -1,0 +1,19 @@
+.image-container, .text-content {
+  // Hiệu ứng xuất hiện mượt mà
+  animation: fadeIn 1s ease-in-out;
+}
+
+button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

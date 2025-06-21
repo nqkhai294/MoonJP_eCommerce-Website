@@ -1,0 +1,66 @@
+// Custom styles for hero section
+.hero-section {
+  .container {
+    max-width: 1200px;
+  }
+
+  // Smooth transitions for buttons
+  button {
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  // Enhanced gradient text effect
+  .bg-gradient-to-r {
+    background-size: 200% 200%;
+    animation: gradientShift 3s ease infinite;
+  }
+
+  // Rotating background effect
+  .transform.rotate-6 {
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: rotate(8deg);
+    }
+  }
+
+  // Image hover effect
+  img {
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+// Gradient animation
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .hero-section {
+    h1 {
+      font-size: 2.5rem !important;
+    }
+
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

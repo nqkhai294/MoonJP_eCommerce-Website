@@ -24,4 +24,20 @@ export class Header {
   onNavigate() {
     this.router.navigate(['/']);
   }
+
+  navigateToProducts() {
+    this.router.navigate(['/products']);
+  }
+
+  navigateToCollections() {
+    this.router.navigate(['/collections']);
+  }
+
+  navigateToInspiration() {
+    this.router.navigate(['/inspiration']);
+  }
+
+  navigateToAboutUs() {
+    this.router.navigate(['/about-us']);
+  }
 }

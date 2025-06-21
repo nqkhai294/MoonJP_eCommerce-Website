@@ -1,1 +1,115 @@
-<p>products works!</p>
+<div class="">
+  <!-- {Banner} -->
+  <div
+    class="flex flex-col items-center justify-center pt-20 pb-28 bg-pink-50 w-full"
+  >
+    <h1 class="text-4xl font-bold text-pink-700">Phụ kiện Nhật bản</h1>
+    <span class="text-2xl font-semibold">Tinh tế & thanh lịch</span>
+    <span class="mx-4 text-center pt-4"
+      >Khám phá bộ sưu tập phụ kiện nhật bản tinh tế, được chế tác thủ công với
+      chất liệu cao cấp</span
+    >
+  </div>
+
+  <div class="lg:grid lg:grid-cols-6 md:m-14 lg:m-20 m-10">
+    <!-- {Search bar} -->
+    <div
+      class="flex flex-row lg:hidden p-2 pt-3 mb-4 rounded-md border items-center"
+    >
+      <button class="w-full text-start" (click)="onClickFilter()">
+        <ng-icon name="heroFunnel" size="20"></ng-icon>
+        <span class="pl-4">Bộ lọc</span>
+      </button>
+
+      <div>
+        <ng-icon
+          [name]="showFilters ? 'heroChevronUp' : 'heroChevronDown' "
+          size="20"
+        ></ng-icon>
+      </div>
+    </div>
+
+    <div *ngIf="showFilters" class="flex flex-col col-span-1 p-5 lg:hidden">
+      <span class="font-semibold text-xl pb-6">Search</span>
+      <input
+        type="text"
+        class="border border-gray-300 rounded p-2"
+        placeholder=""
+      />
+    </div>
+
+    <div class="hidden lg:block">
+      <div class="flex flex-col col-span-1 p-5">
+        <span class="font-semibold text-xl pb-6">Search</span>
+        <input
+          type="text"
+          class="border border-gray-300 rounded p-2"
+          placeholder="Search ..."
+        />
+      </div>
+    </div>
+
+    <!-- {Products List} -->
+    <div class="col-span-5">
+      <div
+        class="flex flex-row w-full justify-between items-center border rounded-md p-4"
+      >
+        <span class="text-sm"
+          >Hiển thị {{ startIndex }} – {{ endIndex }} / {{ productsList.length
+          }} sản phẩm</span
+        >
+
+        <select class="p-2 border rounded-md" name="" id="">
+          <option value="">Mới nhất</option>
+          <option value="">Giá cao đến thấp</option>
+          <option value="">Giá thấp đến cao</option>
+        </select>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-2 mt-4">
+        <div
+          *ngFor="let product of paginatedProducts(currentPage)"
+          class="border rounded-md text-xs"
+        >
+          <app-product-card [product]="product"></app-product-card>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="flex items-center justify-center col-span-6">
+      <div class="flex items-center justify-center mt-6 space-x-2">
+        <button
+          class="px-3 py-1 border rounded disabled:opacity-50"
+          [disabled]="currentPage === 1"
+          (click)="prevPage()"
+        >
+          Trước
+        </button>
+
+        <ng-container
+          *ngFor="let page of [].constructor(totalPages); let i = index"
+        >
+          <button
+            class="px-3 py-1 border rounded"
+            [ngClass]="{
+        'bg-pink-500 text-white': currentPage === i + 1,
+        'font-bold': currentPage !== i + 1
+      }"
+            (click)="goToPage(i + 1)"
+          >
+            {{ i + 1 }}
+          </button>
+        </ng-container>
+
+        <button
+          class="px-3 py-1 border rounded disabled:opacity-50"
+          [disabled]="currentPage === totalPages"
+          (click)="nextPage()"
+        >
+          Sau
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

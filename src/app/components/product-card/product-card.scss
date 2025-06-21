@@ -1,0 +1,21 @@
+:host {
+  display: block;
+}
+
+.product-card-container {
+  // Thêm một transition mượt mà cho các hiệu ứng
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.favorite-button-icon {
+  transition: color 0.2s ease-in-out, fill 0.2s ease-in-out;
+}
+
+.add-to-cart-button {
+  transition: background-color 0.3s, transform 0.2s;
+  
+  &:hover {
+    // Hiệu ứng nhẹ khi hover nút thêm vào giỏ
+    transform: scale(1.02);
+  }
+}
