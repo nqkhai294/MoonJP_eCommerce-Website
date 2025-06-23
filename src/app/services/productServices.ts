@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, of } from 'rxjs';
+import { BehaviorSubject, Observable, ObservableLike, of } from 'rxjs';
 import { ProductCard } from '../data/constants';
 import { MOCK_PRODUCTS } from '../data/mock-products';
+import { get } from 'http';
 
 @Injectable({
   providedIn: 'root',
@@ -31,6 +32,17 @@ export class ProductServices {
       // Nếu chưa có → load toàn bộ rồi tìm
       this.getAllProducts(); // load vào cache
       return of(MOCK_PRODUCTS.find((p) => p.id === id));
+    }
+  }
+
+  getRelatedProducts(category: string): Observable<ProductCard[] | undefined> {
+    const cached = this.productsSubject.value;
+    if (cached.length > 0) {
+      return of(cached.filter((p) => p.category === category));
+    } else {
+      
+      this.getAllProducts(); // load vào cache
+      return of(MOCK_PRODUCTS.filter((p) => p.category === category));
     }
   }
 

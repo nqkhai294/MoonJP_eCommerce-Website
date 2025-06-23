@@ -1,6 +1,8 @@
-<div class="">
+<div class="bg-pink-50 pb-4 lg:px-40">
   <!-- {Navigate bar} -->
-  <div class="flex items-center text-sm gap-2 mx-4 my-4">
+  <div
+    class="sm:flex items-center hidden text-sm sm:text-xs lg:text-sm gap-2 px-4 py-4"
+  >
     <span class="cursor-pointer hover:text-pink-700" (click)="onNavigateTo('/')"
       >Trang chủ</span
     >
@@ -19,5 +21,170 @@
     <span>{{ product?.name }}</span>
   </div>
 
-  <div></div>
+  <!-- {Product Detail} -->
+  <div class="block sm:flex flex-row gap-16 mx-4 my-4 h-auto">
+    <img
+      src="{{ product?.imageUrl }}"
+      alt="{{ product?.name }}"
+      class="w-full sm:w-1/2 h-auto rounded-lg shadow-lg"
+    />
+
+    <div class="w-full sm:w-1/2">
+      <h2 class="text-3xl font-bold">{{ product?.name }}</h2>
+
+      <!-- Rating -->
+      <div class="flex items-center mt-1.5 gap-1 py-1">
+        <svg
+          class="w-4 h-4 text-yellow-400"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+          ></path>
+        </svg>
+        <span class="text-lg font-semibold text-gray-700"
+          >{{ product?.rating }}</span
+        >
+        <span class="text-lg text-gray-400"
+          >({{ product?.reviewCount }} đánh giá)</span
+        >
+      </div>
+
+      <!-- Price -->
+      <div class="flex items-baseline mt-2.5 gap-2">
+        <span class="text-2xl font-bold text-pink-600"
+          >{{ product?.price | number }}đ</span
+        >
+        <span
+          *ngIf="product?.originalPrice"
+          class="text-xl text-gray-400 line-through"
+          >{{ product?.originalPrice | number }}đ</span
+        >
+        <p
+          *ngIf="product?.originalPrice && product?.price"
+          class="text-sm text-green-600"
+        >
+          Tiết kiệm {{ discountAmount | number }}đ
+        </p>
+      </div>
+
+      <!-- Color -->
+      <div class="my-4">
+        <span class="font-semibold">Màu sắc: {{ product?.color }}</span>
+        <div
+          class="w-10 h-10 bg-rose-200 border rounded-full cursor-pointer active:border-rose-400 after:border-rose-400"
+        ></div>
+      </div>
+
+      <!-- Kich Thuoc  -->
+      <div class="my-4">
+        <span class="font-semibold">Kích thước: {{ 0 }}</span>
+      </div>
+
+      <!-- So luong -->
+      <div class="my-4">
+        <span class="font-semibold">Số lượng: 1</span>
+      </div>
+
+      <!-- Add to Cart Button -->
+      <div class="flex flex-row justify-between gap-1 items-center">
+        <button
+          class="flex items-center justify-center bg-pink-600 w-full text-white py-2 px-4 rounded-lg hover:bg-pink-700"
+        >
+          <ng-icon name="heroShoppingCart" class="mr-1" size="20"> </ng-icon>
+          <span>Thêm vào giỏ hàng</span>
+        </button>
+        <button
+          class="bg-white border border-pink-600 py-1 px-4 rounded-lg hover:bg-gray-300 ml-2"
+          (click)="toggleLike()"
+        >
+          <ng-container *ngIf="isLiked; else outlineHeart">
+            <ng-icon
+              name="heroHeartSolid"
+              class="mt-1 text-pink-600"
+              size="20"
+            ></ng-icon>
+          </ng-container>
+          <ng-template #outlineHeart>
+            <ng-icon name="heroHeart" class="mt-1" size="20"></ng-icon>
+          </ng-template>
+        </button>
+        <button
+          class="bg-white border border-pink-600 py-1 px-4 rounded-lg hover:bg-gray-300 ml-2"
+        >
+          <ng-icon name="heroShare" class="mt-1" size="20"> </ng-icon>
+        </button>
+      </div>
+
+      <!-- Buy Now Button -->
+      <div class="mt-2 gap-1 items-center">
+        <button
+          class="bg-white w-full border border-pink-600 text-black py-2 px-4 rounded-lg hover:bg-pink-600 hover:text-white"
+        >
+          Mua ngay
+        </button>
+      </div>
+
+      <!-- chinh sach bao hanh-->
+      <div class="flex flex-row justify-between gap-4 mt-4">
+        <div class="flex flex-row items-center gap-2">
+          <ng-icon name="heroTruck" size="18"></ng-icon>
+          <span class="text-sm">Giao hàng toàn quốc</span>
+        </div>
+
+        <div class="flex flex-row items-center gap-2">
+          <ng-icon name="heroShieldCheck"></ng-icon>
+          <span class="text-sm">Bảo hành 12 tháng</span>
+        </div>
+
+        <div class="flex flex-row items-center gap-2">
+          <ng-icon name="heroArrowPath"></ng-icon>
+          <span class="text-sm">Đổi trả miễn phí trong vòng 7 ngày</span>
+        </div>
+      </div>
+
+      <!-- Information-->
+      <div
+        class="flex flex-row text-sm justify-between gap-4 mt-4 p-4 border rounded-lg bg-white"
+      >
+        <div>
+          <p>SKU: DC</p>
+          <p>Xuất xứ: Nhật bản</p>
+        </div>
+
+        <div>
+          <p>Chất liệu: {{product?.material}}</p>
+          <p>Trọng lượng: 12g</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- {Product Description} -->
+  <div class="mx-4 sm:mx-20 bg-white p-6 rounded-lg shadow-lg">
+    <div>
+      <h3 class="text-2xl font-semibold mb-4">Mô tả sản phẩm</h3>
+      <p class="text-gray-700">{{ product?.description }}</p>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-semibold mb-4 mt-4">Đặc điểm nổi bật</h3>
+      <p></p>
+    </div>
+  </div>
+
+  <!-- {Related Products} -->
+  <div class="flex flex-col mt-8 items-center justify-center">
+    <h3 class="text-2xl font-semibold mb-4 mx-20 mt-8 text-center">Sản phẩm liên quan</h3>
+    <div
+      class="mx-4 sm:mx-20 mt-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+    >
+      <app-product-card
+        *ngFor="let relatedProduct of relatedProducts"
+        [product]="relatedProduct"
+      ></app-product-card>
+    </div>
+  </div>
 </div>
