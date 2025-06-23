@@ -1,1 +1,43 @@
-<p>collections works!</p>
+<div>
+  <!-- Banner-->
+  <div
+    class="flex flex-col items-center justify-center pt-20 pb-28 bg-pink-50 w-full"
+  >
+    <span class="text-3xl font-semibold">Bộ sưu tập</span>
+    <h1 class="text-5xl font-bold text-pink-700 pb-3">Phụ kiện Nhật bản</h1>
+
+    <span class="mx-4 text-center pt-4"
+      >Khám phá những bộ sưu tập được tuyển chọn kỹ lưỡng, mỗi bộ sưu tập đều kể
+      một câu chuyện riêng về văn hóa và nghệ thuật Nhật Bản</span
+    >
+  </div>
+
+  <!-- Featured Collections-->
+  <div class="flex flex-col justify-center items-center pt-8 pb-4">
+    <span class="text-2xl font-semibold">Bộ sưu tập nổi bật</span>
+
+    <div class="flex flex-row px-40">
+      <div *ngFor="let collection of collections">
+        <div *ngIf="collection.highlight" class="w-96 mx-4 mt-4">
+          <app-collections-card
+            [collection]="collection"
+          ></app-collections-card>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Collections-->
+  <div class="flex justify-center items-center pt-8 pb-4">
+    <span class="text-2xl font-semibold">Tất cả bộ sưu tập</span>
+    <span class="text-2xl font-semibold text-pink-700 pl-2"
+      >({{ collections.length }})</span
+    >
+  </div>
+
+  <div class="grid grid-cols-3 gap-4 p-4 mx-20">
+    <div *ngFor="let collection of collections">
+      <app-collections-card [collection]="collection"></app-collections-card>
+    </div>
+  </div>
+</div>

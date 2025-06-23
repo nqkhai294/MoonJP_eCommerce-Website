@@ -21,3 +21,15 @@ export interface ProductCard {
     isNew?: boolean; // Optional field to indicate if the product is new
     isOnSale?: boolean; // Optional field to indicate if the product is on sale
 }
+
+export interface CollectionCard {
+  id: number;
+  name: string;
+  description: string;
+  category: string;
+  productCount: number;
+  priceFrom: number;
+  imageUrl: string;
+  tag?: string;
+  highlight?: boolean;
+}

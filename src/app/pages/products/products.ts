@@ -44,7 +44,7 @@ export class Products implements OnInit {
   selectedColors: { [key: string]: boolean } = {};
   priceValue: number = 1000000;
 
-  showFilters = true;
+  showFilters = false;
 
   currentPage = 1;
   itemsPerPage = 12;
