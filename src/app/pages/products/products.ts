@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MOCK_PRODUCTS } from '../../data/mock-products';
 import { CommonModule } from '@angular/common';
 import { ProductCardComponent } from '../../components/product-card/product-card';
 import {
@@ -12,6 +11,7 @@ import { NgIcon, provideIcons } from '@ng-icons/core';
 import { ProductCard, CategoryCard } from '../../data/constants';
 import { FormsModule } from '@angular/forms';
 import { MOCK_CATEGORIES } from '../../data/mock-categories';
+import { ProductServices } from '../../services/productServices';
 
 @Component({
   selector: 'app-products',
@@ -29,11 +29,13 @@ import { MOCK_CATEGORIES } from '../../data/mock-categories';
   ],
 })
 export class Products implements OnInit {
-  masterProductList: ProductCard[] = MOCK_PRODUCTS;
+  masterProductList: ProductCard[] = [];
   filteredProducts: ProductCard[] = [];
   categories: CategoryCard[] = MOCK_CATEGORIES;
   materials = ['Bạc 925', 'Bạc mạ vàng', 'Ngọc trai Akoya', 'Đá tự nhiên'];
   colors = ['Hồng', 'Trắng', 'Bạc', 'Vàng', 'Đen'];
+
+  constructor(private productService: ProductServices) {}
 
   // Filter state
   searchTerm: string = '';
@@ -51,6 +53,11 @@ export class Products implements OnInit {
   }
 
   ngOnInit(): void {
+    this.productService.getAllProducts().subscribe((products) => {
+      this.masterProductList = products;
+      
+    });
+
     this.applyFilters();
   }
 

@@ -9,6 +9,7 @@ export interface CategoryCard {
 export interface ProductCard {
     id: number;
     name: string;
+    description: string;
     imageUrl: string;
     price: number;
     rating: number;

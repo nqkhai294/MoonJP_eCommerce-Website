@@ -1,0 +1,23 @@
+<div class="">
+  <!-- {Navigate bar} -->
+  <div class="flex items-center text-sm gap-2 mx-4 my-4">
+    <span class="cursor-pointer hover:text-pink-700" (click)="onNavigateTo('/')"
+      >Trang chủ</span
+    >
+    <ng-icon name="heroChevronRight"></ng-icon>
+
+    <span
+      class="cursor-pointer hover:text-pink-700"
+      (click)="onNavigateTo('/products')"
+      >Sản phẩm</span
+    >
+    <ng-icon name="heroChevronRight"></ng-icon>
+
+    <span>{{ product?.category }}</span>
+    <ng-icon name="heroChevronRight"></ng-icon>
+
+    <span>{{ product?.name }}</span>
+  </div>
+
+  <div></div>
+</div>

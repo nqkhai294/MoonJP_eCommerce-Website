@@ -11,6 +11,23 @@
     >
   </div>
 
+  <div class="flex  mx-8 px-6 lg:px-20">
+    <button
+      (click)="showFilters = !showFilters"
+      class="lg:hidden flex justify-between w-full mb-4 py-2 text-black border mt-4 px-4 font-semibold rounded-lg hover:from-pink-600 hover:to-rose-600 transition-all duration-200 text-start"
+    >
+      <div>
+        <ng-icon name="heroFunnel"></ng-icon>
+        Bộ lọc
+      </div>
+
+      <ng-icon
+        [name]="showFilters ? 'heroChevronUp' : 'heroChevronDown'"
+        class="pt-1"
+      ></ng-icon>
+    </button>
+  </div>
+
   <div class="lg:grid lg:grid-cols-4 md:m-14 lg:m-20 m-10 gap-8">
     <!-- Filter Sidebar -->
     <div
@@ -128,8 +145,8 @@
         class="flex flex-row w-full justify-between items-center border rounded-md p-4 mb-4"
       >
         <span class="text-sm"
-          >Hiển thị {{ startIndex }} – {{ endIndex }} /
-          {{ filteredProducts.length }} sản phẩm</span
+          >Hiển thị {{ startIndex }} – {{ endIndex }} / {{
+          filteredProducts.length }} sản phẩm</span
         >
 
         <select class="p-2 border rounded-md" name="" id="">
@@ -157,9 +174,7 @@
           <p class="text-xl font-semibold text-gray-700">
             Không tìm thấy sản phẩm nào
           </p>
-          <p class="text-gray-500 mt-2">
-            Vui lòng thử lại với bộ lọc khác.
-          </p>
+          <p class="text-gray-500 mt-2">Vui lòng thử lại với bộ lọc khác.</p>
         </div>
       </ng-template>
       <!-- Pagination -->

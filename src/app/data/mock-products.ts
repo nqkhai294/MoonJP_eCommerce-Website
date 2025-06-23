@@ -13,10 +13,12 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Vòng tay',
     material: 'Bạc mạ vàng',
     color: 'Hồng',
+    description:
+      'Lấy cảm hứng từ hoa anh đào Nhật Bản, chiếc vòng tay mang vẻ đẹp tinh tế và dịu dàng, phù hợp cho những khoảnh khắc lãng mạn.',
   },
   {
     id: 2,
-    name: 'Dây chuyền hạ chí',
+    name: 'Dây chuyền Hạ Chí',
     price: 450000,
     rating: 4.9,
     reviewCount: 98,
@@ -25,6 +27,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Dây chuyền',
     material: 'Bạc 925',
     color: 'Bạc',
+    description:
+      'Thiết kế thanh lịch tượng trưng cho sự tròn đầy của mùa hạ, thích hợp để kết hợp với trang phục nhẹ nhàng và thanh lịch.',
   },
   {
     id: 3,
@@ -38,6 +42,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Trâm cài áo',
     material: 'Bạc mạ vàng',
     color: 'Vàng',
+    description:
+      'Biểu tượng của sự cao quý và tái sinh, chiếc trâm cài này là điểm nhấn độc đáo cho bộ trang phục truyền thống hoặc dự tiệc.',
   },
   {
     id: 4,
@@ -50,6 +56,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Bông tai',
     material: 'Đá tự nhiên',
     color: 'Trắng',
+    description:
+      'Thiết kế giọt nước nhẹ nhàng, mang đến vẻ ngoài tinh khôi và sang trọng cho các cô gái yêu sự tối giản và thanh lịch.',
   },
   {
     id: 5,
@@ -63,6 +71,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Nhẫn',
     material: 'Bạc 925',
     color: 'Hồng',
+    description:
+      'Chiếc nhẫn tinh tế với họa tiết hoa anh đào khắc họa sự nữ tính, trong trẻo và nhẹ nhàng đặc trưng của phong cách Nhật Bản.',
   },
   {
     id: 6,
@@ -75,6 +85,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Dây chuyền',
     material: 'Ngọc trai Akoya',
     color: 'Trắng',
+    description:
+      'Hình ảnh mặt trăng huyền ảo kết hợp cùng ngọc trai cao cấp mang đến vẻ đẹp dịu dàng và đầy bí ẩn.',
   },
   {
     id: 7,
@@ -88,6 +100,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Phụ kiện tóc',
     material: 'Đá tự nhiên',
     color: 'Xanh',
+    description:
+      'Trâm cài với sắc xanh ngọc giúp làm nổi bật mái tóc và tôn lên vẻ đẹp thanh thoát, thuần khiết của người phụ nữ.',
   },
   {
     id: 8,
@@ -100,6 +114,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Bông tai',
     material: 'Đá tự nhiên',
     color: 'Xanh',
+    description:
+      'Sự kết hợp giữa kiểu dáng cổ điển và chất liệu ngọc bích tạo nên một đôi bông tai vừa sang trọng vừa dễ phối đồ.',
   },
   {
     id: 9,
@@ -112,6 +128,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Vòng tay',
     material: 'Bạc 925',
     color: 'Bạc',
+    description:
+      'Tinh xảo trong từng chi tiết, lắc tay đính kim cương nhỏ phù hợp với phong cách tối giản nhưng không kém phần nổi bật.',
   },
   {
     id: 10,
@@ -124,6 +142,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Nhẫn',
     material: 'Ngọc trai Akoya',
     color: 'Tím',
+    description:
+      'Sự kết hợp giữa ngọc trai tím độc đáo và thiết kế mềm mại tạo nên một chiếc nhẫn thanh lịch và đầy cuốn hút.',
   },
   {
     id: 11,
@@ -136,6 +156,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Dây chuyền',
     material: 'Bạc mạ vàng',
     color: 'Vàng',
+    description:
+      'Chiếc vòng cổ mang hình ảnh lá phong tượng trưng cho mùa thu Nhật Bản, gợi cảm giác ấm áp và lãng mạn.',
   },
   {
     id: 12,
@@ -149,6 +171,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Dây chuyền',
     material: 'Bạc 925',
     color: 'Bạc',
+    description:
+      'Lấy cảm hứng từ những đêm hè đầy đom đóm ở vùng quê Nhật, chiếc dây chuyền tỏa sáng một cách dịu dàng và đầy kỷ niệm.',
   },
   {
     id: 13,
@@ -161,6 +185,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Phụ kiện tóc',
     material: 'Bạc mạ vàng',
     color: 'Vàng',
+    description:
+      'Cánh hạc tượng trưng cho sự trường thọ và may mắn trong văn hóa Nhật, được khắc họa đầy duyên dáng trên chiếc trâm cài.',
   },
   {
     id: 14,
@@ -174,6 +200,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Bông tai',
     material: 'Đá tự nhiên',
     color: 'Trắng',
+    description:
+      'Đôi bông tai pha lê được tạo hình xoắn độc đáo, giúp phản chiếu ánh sáng lấp lánh theo từng chuyển động.',
   },
   {
     id: 15,
@@ -186,6 +214,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Nhẫn',
     material: 'Đá tự nhiên',
     color: 'Xanh',
+    description:
+      'Thiết kế lấy cảm hứng từ đôi mắt xanh biếc của biển cả, chiếc nhẫn mang đến vẻ đẹp huyền bí và sâu lắng.',
   },
   {
     id: 16,
@@ -198,6 +228,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Vòng tay',
     material: 'Bạc mạ vàng',
     color: 'Vàng',
+    description:
+      'Ánh sáng dịu dàng của buổi sáng sớm được tái hiện qua thiết kế nhẹ nhàng, thanh thoát của chiếc vòng tay này.',
   },
   {
     id: 17,
@@ -211,6 +243,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Vòng tay',
     material: 'Bạc 925',
     color: 'Bạc',
+    description:
+      'Từng viên đá nhỏ như những vì sao lấp lánh trên bầu trời đêm, tạo nên vẻ ngoài cuốn hút và sang trọng.',
   },
   {
     id: 18,
@@ -223,6 +257,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Dây chuyền',
     material: 'Đá tự nhiên',
     color: 'Hồng',
+    description:
+      'Với thạch anh hồng mang năng lượng yêu thương và chữa lành, chiếc dây chuyền phù hợp cho những ai yêu phong thủy và cảm xúc.',
   },
   {
     id: 19,
@@ -235,6 +271,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Trâm cài áo',
     material: 'Bạc mạ vàng',
     color: 'Hồng',
+    description:
+      'Hoa mẫu đơn - loài hoa của sự phú quý và thanh nhã, được thể hiện tinh xảo trong thiết kế trâm cài áo duyên dáng.',
   },
   {
     id: 20,
@@ -248,6 +286,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Bông tai',
     material: 'Ngọc trai Akoya',
     color: 'Trắng',
+    description:
+      'Tựa như giọt nước mắt long lanh của những cảm xúc tinh tế, đôi bông tai này mang lại nét đẹp mơ màng và lãng mạn.',
   },
   {
     id: 21,
@@ -260,6 +300,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Nhẫn',
     material: 'Đá tự nhiên',
     color: 'Xanh',
+    description:
+      'Lá ngọc biểu trưng cho sự sống và tươi mới, chiếc nhẫn là lựa chọn lý tưởng cho những ai yêu thiên nhiên và sự thanh khiết.',
   },
   {
     id: 22,
@@ -272,6 +314,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Dây chuyền',
     material: 'Bạc mạ vàng',
     color: 'Vàng',
+    description:
+      'Chiếc vòng cổ lấy cảm hứng từ hoa tuyết mùa đông Nhật Bản, mang vẻ đẹp mong manh nhưng không kém phần nổi bật.',
   },
   {
     id: 23,
@@ -285,6 +329,8 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Dây chuyền',
     material: 'Bạc 925',
     color: 'Bạc',
+    description:
+      'Thiết kế độc đáo hòa quyện giữa hình ảnh mặt trời và mặt trăng, tượng trưng cho sự cân bằng âm dương trong cuộc sống.',
   },
   {
     id: 24,
@@ -297,5 +343,7 @@ export const MOCK_PRODUCTS: ProductCard[] = [
     category: 'Trâm cài áo',
     material: 'Bạc mạ vàng',
     color: 'Hồng',
+    description:
+      'Hoa cúc tượng trưng cho sự thanh cao và bền bỉ, chiếc trâm cài là món phụ kiện thanh lịch cho các dịp trang trọng.',
   },
 ];
