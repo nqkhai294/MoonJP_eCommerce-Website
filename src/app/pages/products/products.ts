@@ -45,7 +45,7 @@ export class Products implements OnInit {
   showFilters = true;
 
   currentPage = 1;
-  itemsPerPage = 10;
+  itemsPerPage = 12;
   get totalPages(): number {
     return Math.ceil(this.filteredProducts.length / this.itemsPerPage);
   }
